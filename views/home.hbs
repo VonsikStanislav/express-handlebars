@@ -1,0 +1,9 @@
+<div class="actions">
+    <a href="/Add" class="btn btn-primary">Добавить</a>
+</div>
+
+<div class="list">
+    {{#each records}}
+        {{> row id=this.id name=this.name surname=this.surname patronymic=this.patronymic phone=this.phone url="/Update"}}
+    {{/each}}
+</div>

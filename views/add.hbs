@@ -1,0 +1,18 @@
+<form action="/Add" method="POST">
+    <div class="form-group">
+        <input type="text" name="surname" placeholder="Фамилия" required>
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="text" name="patronymic" placeholder="Отчество">
+        <input type="text" name="phone" placeholder="Телефон" required>
+    </div>
+    <div class="actions">
+        <button type="submit" class="btn btn-primary">Добавить</button>
+        {{{cancelButton}}}
+    </div>
+</form>
+
+<div class="list">
+    {{#each records}}
+        {{> row id=this.id name=this.name surname=this.surname patronymic=this.patronymic phone=this.phone url="/Update" disabled=true}}
+    {{/each}}
+</div>

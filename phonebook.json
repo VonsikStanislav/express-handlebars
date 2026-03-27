@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Stas",
+        "surname": "Vonsik",
+        "patronymic": "Ivanovich",
+        "phone": "+375298949453"
+    },
+    {
+        "id": 2,
+        "name": "Andrew",
+        "surname": "Chiruk",
+        "patronymic": "Vitalievich",
+        "phone": "+375336763002"
+    },
+    {
+        "id": 3,
+        "name": "Vika",
+        "surname": "Kirpichenko",
+        "patronymic": "Andreewna",
+        "phone": "+375333437418"
+    },
+    {
+        "id": "6",
+        "name": "Vladd",
+        "surname": "Vasiliev",
+        "patronymic": "Vasilievich",
+        "phone": "+375259759396"
+    }
+]

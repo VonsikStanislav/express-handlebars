@@ -1,0 +1,20 @@
+<form action="/Update" method="POST">
+    <input type="hidden" name="id" value="{{selected.id}}">
+    <div class="form-group">
+        <input type="text" name="surname" value="{{selected.surname}}" placeholder="Фамилия" required>
+        <input type="text" name="name" value="{{selected.name}}" placeholder="Имя" required>
+        <input type="text" name="patronymic" value="{{selected.patronymic}}" placeholder="Отчество">
+        <input type="text" name="phone" value="{{selected.phone}}" placeholder="Телефон" required>
+    </div>
+    <div class="actions">
+        <button type="submit" class="btn btn-primary">Изменить</button>
+        <button type="submit" id="btn-delete" formaction="/Delete" class="btn btn-danger">Удалить</button>
+        {{{cancelButton}}}
+    </div>
+</form>
+
+<div class="list">
+    {{#each records}}
+        {{> row id=this.id name=this.name surname=this.surname patronymic=this.patronymic phone=this.phone url="/Update" disabled=true}}
+    {{/each}}
+</div>
